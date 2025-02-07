@@ -21,7 +21,7 @@ func main() {
 		log.Fatalf("Error reading config: %v", err)
 	}
 
-	db, err := sql.Open("postgres", "postgres://chinmay:postgres@localhost:5432/gator?sslmode=disable")
+	db, err := sql.Open("postgres", cfg.DbURL)
 	if err != nil {
 		log.Fatal(err)
 		os.Exit(1)

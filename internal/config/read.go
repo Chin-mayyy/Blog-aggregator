@@ -29,7 +29,6 @@ func ReadFile() (Config, error) {
 	}
 
 	return config, nil
-
 }
 
 func getConfigFilePath() (string, error) {
@@ -39,5 +38,4 @@ func getConfigFilePath() (string, error) {
 	}
 	fullPath := filepath.Join(home, configFileName)
 	return fullPath, nil
-
 }
